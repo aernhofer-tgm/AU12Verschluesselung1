@@ -32,6 +32,7 @@ public class MonoAlphabeticCipher implements Cipher {
 	 * @since 2014-04-04
 	 */
 	protected void setSecretAlphabet(String secretAlphabet){
+		secretAlphabet = secretAlphabet.toLowerCase();
 		this.secretAlphabet = secretAlphabet; //Speichert das übergebene Alphabet in die geheim Alphabet Variable
 	}
 	
